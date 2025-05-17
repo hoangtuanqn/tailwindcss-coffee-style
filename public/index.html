@@ -4,16 +4,18 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./output.css" />
-        <title>HTUANQN - Coffe Style</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon/CoffeeStyle.ico" />
+        <title>HTUANQN - Coffee Style</title>
     </head>
     <body>
         <div id="root">
-            <div class="px-8 mx-auto text-base content-wrapper max-w-[1536px] bg-slate-200">
-                <header class="py-6 mx-10">
-                    <nav class="flex flex-row justify-between">
+            <div class="px-8 font-Karla mx-auto text-base content-wrapper max-w-[1536px] bg-slate-200">
+                <header class="p-6 mx-auto">
+                    <nav class="relative flex flex-row justify-between">
                         <div class="text-xl font-semibold cursor-pointer logo basis-2/6 text-centern">CoffeeStyle.</div>
                         <ul
-                            class="flex flex-row items-center justify-end gap-6 text-sm font-medium text-gray-500 uppercase basis-3/6"
+                            id="ht-top-menu"
+                            class="hidden gap-6 text-sm font-medium text-gray-500 uppercase lg:items-center lg:justify-end lg:flex basis-3/6"
                         >
                             <li class="ht-top-menu-item">
                                 <a href="#">Home</a>
@@ -23,13 +25,15 @@
                             <li class="ht-top-menu-item"><a href="#">About</a></li>
                             <li class="ht-top-menu-item"><a href="#">Contact</a></li>
                             <li class="ht-top-menu-item"><a href="#">StyleGuide</a></li>
-                            <li class="ht-top-menu-item"><a href="https://tuanori.vn/" target="_blank">HTUANQN</a></li>
+                            <li class="ht-top-menu-item active">
+                                <a href="https://tuanori.vn/" target="_blank">HTUANQN</a>
+                            </li>
                         </ul>
                         <ul
-                            class="flex items-center justify-start ml-16 text-sm font-medium text-gray-500 uppercase basis-1/6"
+                            class="flex items-center justify-end ml-16 text-sm font-medium text-gray-500 uppercase lg:justify-start basis-3/6 lg:basis-1/6"
                         >
                             <li class="ht-top-menu-item">
-                                <a href="#" class="flex items-center gap-x-1">
+                                <a href="#" class="flex items-center">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
@@ -45,11 +49,28 @@
                                         />
                                     </svg>
 
-                                    <span>Cart</span>
+                                    <span class="mx-2">Cart</span>
                                     <span class="text-white bg-orange-400 ht-icon-circle">7</span>
                                 </a>
                             </li>
                         </ul>
+                        <div class="flex items-center px-2 cursor-pointer sm:px-4 basis-1/6 lg:hidden">
+                            <svg
+                                id="ht-toggle-top-menu-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="ht-icon"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                                />
+                            </svg>
+                        </div>
                     </nav>
                 </header>
                 <main>
@@ -66,4 +87,11 @@
         </div>
         <!-- End root -->
     </body>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
 </html>
