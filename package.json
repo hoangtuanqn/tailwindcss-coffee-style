@@ -1,0 +1,26 @@
+{
+  "name": "tailwindcss-coffee-style",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoangtuanqn/tailwindcss-coffee-style.git"
+  },
+  "keywords": [],
+  "author": "HTUANQN",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hoangtuanqn/tailwindcss-coffee-style/issues"
+  },
+  "homepage": "https://github.com/hoangtuanqn/tailwindcss-coffee-style#readme",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
