@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@theme {
+    --color-light-coffee: #c89f94;
+}
+@layer components {
+    .ht-top-menu-item {
+        @apply relative py-1 cursor-pointer hover:text-gray-800 after:absolute after:bottom-0 after:left-0 after:w-0 after:bg-light-coffee after:h-0.5 hover:after:w-full after:transition-all after:ease-in-out after:duration-300;
+    }
+    .ht-icon {
+        @apply w-5 h-5 inline-block;
+    }
+    .ht-icon-circle {
+        @apply text-xs text-center rounded-full px-1.5;
+    }
+}

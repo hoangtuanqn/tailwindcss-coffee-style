@@ -1,0 +1,2 @@
+- Tất cả các icon trong dự án đều có chung 1 kích cỡ
+- Nav link có nhiều cái giống nhau, nếu css quá nhiều thì cũng nên tạo 1 class mới
