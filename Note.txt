@@ -1,2 +1,3 @@
 - Tất cả các icon trong dự án đều có chung 1 kích cỡ
 - Nav link có nhiều cái giống nhau, nếu css quá nhiều thì cũng nên tạo 1 class mới
+- Chỉnh opacity background ko dùng kiểu cũ như là: bg-opacity-* nữa mà dùng bg-gray-900/* .VD: bg-gray-900/30  (Lên ChatGPT)
