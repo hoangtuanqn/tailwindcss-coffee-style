@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 @theme {
-    --color-light-coffee: #c89f94;
+    --color-coffee-50: #e8d6d0;
+    --color-coffee-200: #c89f94;
+    --color-coffee-400: #a25f4b;
+    --color-coffee-600: #743f2f;
     --font-Karla: "Karla", "sans-serif";
     --animate-slideDown: slideDown 0.4s ease-in-out;
     @keyframes slideDown {
@@ -15,7 +18,7 @@
 }
 @layer components {
     .ht-top-menu-item {
-        @apply relative py-1 cursor-pointer hover:text-gray-800 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 after:lg:bg-light-coffee after:lg:h-0.5 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+        @apply relative py-1 cursor-pointer hover:text-gray-800 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 after:lg:bg-coffee-200 after:lg:h-0.5 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
     }
     .ht-top-menu-item.active {
         @apply text-gray-800 after:lg:w-full;
@@ -25,6 +28,15 @@
     }
     .ht-icon-circle {
         @apply text-xs text-center rounded-full px-1.5;
+    }
+    .ht-subheadline {
+        @apply flex items-center justify-center mb-24;
+    }
+    .ht-subheadline-label {
+        @apply mx-4 text-xs font-medium tracking-widest text-center text-gray-500 uppercase lg:text-sm;
+    }
+    .ht-subheadline-deco-line {
+        @apply w-8 h-px bg-gray-100;
     }
 }
 
