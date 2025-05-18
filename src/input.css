@@ -7,6 +7,7 @@
     --color-coffee-600: #743f2f;
     --font-Karla: "Karla", "sans-serif";
     --animate-slideDown: slideDown 0.4s ease-in-out;
+    --animate-fadeIn: fadeIn 0.4s ease-in-out;
     @keyframes slideDown {
         0% {
             transform: translateY(-100%);
@@ -15,10 +16,22 @@
             transform: translateY(0);
         }
     }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
 @layer components {
+    .ht-topmenu-expaned {
+        @apply absolute top-10 z-50 w-full text-center bg-white;
+    }
     .ht-top-menu-item {
-        @apply relative py-1 cursor-pointer hover:text-gray-800 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 after:lg:bg-coffee-200 after:lg:h-0.5 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+        @apply relative py-1 cursor-pointer hover:text-gray-800 after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:w-0 after:lg:bg-coffee-200 after:lg:h-0.5 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300 [&_a]:py-2 [&_a]:block;
     }
     .ht-top-menu-item.active {
         @apply text-gray-800 after:lg:w-full;
@@ -38,10 +51,13 @@
     .ht-subheadline-deco-line {
         @apply w-8 h-px bg-gray-100;
     }
+    .ht-button {
+        @apply px-8 py-4 text-sm font-semibold tracking-wider text-center text-gray-900 uppercase bg-white hover:bg-white/95 cursor-pointer duration-300;
+    }
 }
 
-@layer components {
-    .ht-topmenu-expaned {
-        @apply absolute top-10 z-50 w-full text-center bg-white;
+@layer utilities {
+    .ht-flex-center {
+        @apply flex items-center justify-center;
     }
 }
