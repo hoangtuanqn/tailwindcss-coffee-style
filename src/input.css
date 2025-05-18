@@ -52,7 +52,7 @@
         @apply w-8 h-px bg-gray-100;
     }
     .ht-button {
-        @apply px-8 py-4 text-sm font-semibold tracking-wider text-center text-gray-900 uppercase bg-white hover:bg-white/95 cursor-pointer duration-300;
+        @apply px-8 py-4 text-sm font-semibold tracking-wider text-center text-gray-900 uppercase cursor-pointer duration-300;
     }
 }
 
