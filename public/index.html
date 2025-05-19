@@ -8,7 +8,7 @@
         <title>HTUANQN - Coffee Style</title>
     </head>
     <body>
-        <div id="root">
+        <div id="root" class="overflow-hidden">
             <div class="px-8 font-Karla mx-auto text-base content-wrapper max-w-[1536px]">
                 <!-- Header -->
                 <header class="p-6 mx-auto">
@@ -78,7 +78,10 @@
 
                 <main>
                     <!-- Slider -->
-                    <div class="slider h-[530px] bg-[url('./images/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom">
+                    <!-- class="max-lg:w-screen max-lg:relative max-lg:left-[calc(-50vw+50%)] slider h-[530px] bg-[url('./images/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom" -->
+                    <div
+                        class="max-lg:w-screen max-lg:relative max-lg:left-[calc(-50vw+50%)] slider h-[530px] bg-[url('./images/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom"
+                    >
                         <div class="w-full h-full ht-flex-center bg-gray-900/30">
                             <div class="mx-8 text-center text-white lg:mx-16">
                                 <span class="block mb-6 tracking-wider uppercase">Best place to buy design</span>
@@ -506,6 +509,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <div
+                        class="w-screen relative left-[calc(-50vw+50%)] ht-parallax-section bg-[url('./images/bg-parallax-01.jpg')] bg-no-repeat bg-cover bg-center h-[340px] mb-24 bg-fixed"
+                    ></div>
 
                     <div class="ht-subheadline">
                         <div class="ht-subheadline-deco-line"></div>
