@@ -54,6 +54,9 @@
     .ht-button {
         @apply px-8 py-4 text-sm font-semibold tracking-wider text-center text-gray-900 uppercase cursor-pointer duration-300;
     }
+    .ht-item-link {
+        @apply text-gray-500 hover:text-coffee-400 duration-300;
+    }
 }
 
 @layer utilities {

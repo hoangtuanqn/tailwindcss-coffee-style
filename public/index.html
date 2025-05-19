@@ -13,7 +13,7 @@
                 <!-- Header -->
                 <header class="p-6 mx-auto">
                     <nav class="relative flex flex-row justify-between">
-                        <div class="text-xl font-semibold cursor-pointer logo basis-2/6 text-centern">CoffeeStyle.</div>
+                        <div class="text-xl font-semibold text-center cursor-pointer logo basis-2/6">CoffeeStyle.</div>
                         <ul
                             id="ht-top-menu"
                             class="hidden gap-6 text-sm font-medium text-gray-500 uppercase lg:items-center lg:justify-end lg:flex basis-3/6"
@@ -472,29 +472,29 @@
                     </div>
 
                     <div class="coffe-magazine w-[95%] xl:w-[65%] mx-auto mb-24">
-                        <div class="flex flex-col items-center justify-center gap-16 md:gap-5 md:flex-row-reverse">
-                            <div class="md:gap-4 md:flex md:flex-row basis-1/2 ht-magazine-images">
+                        <div class="flex flex-col items-center justify-center gap-16 lg:gap-5 lg:flex-row-reverse">
+                            <div class="lg:gap-4 lg:flex lg:flex-row basis-1/2 ht-magazine-images">
                                 <img
                                     src="./images/magazine-1.jpg"
                                     alt=""
-                                    class="basis-2/3 w-[100%] h-[280px] lg:w-[100%] mb-2 md:mb-0 object-cover"
+                                    class="basis-2/3 w-[100%] h-[280px] lg:w-[100%] mb-4 lg:mb-0 object-cover"
                                 />
                                 <div
-                                    class="flex flex-row justify-between w-full md:flex-col ht-magazine-small-images basis-1/3"
+                                    class="flex flex-row justify-between w-full lg:flex-col ht-magazine-small-images basis-1/3"
                                 >
                                     <img
                                         src="./images/magazine-2.jpg"
                                         alt=""
-                                        class="h-[80%] w-[48%] md:w-full md:h-[130px] object-cover"
+                                        class="h-[80%] w-[48%] lg:w-full lg:h-[130px] object-cover"
                                     />
                                     <img
                                         src="./images/magazine-3.jpg"
                                         alt=""
-                                        class="h-[80%] w-[48%] md:w-full md:h-[130px] object-cover"
+                                        class="h-[80%] w-[48%] lg:w-full lg:h-[130px] object-cover"
                                     />
                                 </div>
                             </div>
-                            <div class="flex flex-col gap-4 text-center ht-magazine-post basis-1/2 md:text-left">
+                            <div class="flex flex-col gap-4 text-center ht-magazine-post basis-1/2 lg:text-left">
                                 <span class="text-xs font-medium tracking-widest text-gray-500 uppercase lg:text-sm"
                                     >Premium Offer</span
                                 >
@@ -504,7 +504,7 @@
                                 </p>
                                 <a
                                     href="#"
-                                    class="inline-block mx-auto text-white bg-black md:mx-0 w-fit ht-button hover:bg-black/75"
+                                    class="inline-block mx-auto text-white bg-black lg:mx-0 w-fit ht-button hover:bg-black/75"
                                     >Start Shopping</a
                                 >
                             </div>
@@ -661,7 +661,65 @@
                         </div>
                     </div>
                 </main>
-                <footer>Footer</footer>
+                <footer class="w-[95%] xl:w-[65%] mx-auto pb-24 text-gray-500 text-sm text-center lg:text-left">
+                    <div class="grid grid-cols-1 gap-16 lg:gap-8 lg:grid-cols-6">
+                        <div class="lg:col-span-2">
+                            <div class="mb-4 text-xl font-bold text-gray-800">CoffeeStyle.</div>
+                            <p class="mb-10 lg:mb-20">
+                                Delivering the best coffee life since 1996. From coffee geeks to the real ones.
+                            </p>
+                            <p class="text-gray-400 duration-300 hover:text-coffee-400">HTUANQN &copy; 2021</p>
+                        </div>
+                        <div class="lg:col-span-1">
+                            <div class="mb-4 font-semibold tracking-wider text-gray-500 uppercase">Menu</div>
+                            <ul class="flex flex-col gap-3">
+                                <li>
+                                    <a href="#" class="ht-item-link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">Our Products</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">Styleguide</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lg:col-span-1">
+                            <div class="mb-4 font-semibold tracking-wider text-gray-500 uppercase">Follow Us</div>
+                            <ul class="flex flex-col gap-3">
+                                <li>
+                                    <a href="https://www.facebook.com/phamhoangtuanqn/" class="ht-item-link"
+                                        >Facebook</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">Pinterest</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="ht-item-link">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lg:col-span-2">
+                            <div class="mb-4 font-semibold tracking-wider text-gray-500 uppercase">Contact Us</div>
+                            <p class="mb-4">We’re Always Happy to Help</p>
+                            <p class="mb-16 text-xl font-semibold text-gray-600">
+                                <a href="mailto:phamhoangtuanqn@gmail.com">phamhoangtuanqn@gmail.com</a>
+                            </p>
+                            <a class="ht-item-link" href="http://tuanori.com/">Powered by TUANORI.VN</a>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
         <!-- End root -->
